@@ -17,12 +17,6 @@ const geistMono = localFont({
 });
 
 export default function RootLayout({ children }) {
-  const pathname = usePathname();
-
-  useEffect(() => {
-    window.scrollTo(0, 0); 
-  }, [pathname]);
-
   return (
     <html lang="tr">
       <body
